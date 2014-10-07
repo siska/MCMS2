@@ -54,6 +54,14 @@
     return YES;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)cell {
+
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    MagicalCreature *creature = [self.creatures objectAtIndex:indexPath.row];
+    CreatureViewController *creatureViewController = [segue destinationViewController];
+
+    creatureViewController.creatures = creature;
+}
 
 #pragma mark - TableView Delegates
 
