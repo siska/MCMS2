@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MagicalCreature.h"
+#import "CreatureViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textField;

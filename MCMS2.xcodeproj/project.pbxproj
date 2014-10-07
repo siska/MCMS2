@@ -15,6 +15,7 @@
 		1254F7D819E48BC900122F7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1254F7D619E48BC900122F7B /* LaunchScreen.xib */; };
 		1254F7E419E48BCA00122F7B /* MCMS2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F7E319E48BCA00122F7B /* MCMS2Tests.m */; };
 		1254F7EF19E48BF000122F7B /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F7EE19E48BF000122F7B /* MagicalCreature.m */; };
+		1254F7F219E4957300122F7B /* CreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F7F119E4957300122F7B /* CreatureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		1254F7E319E48BCA00122F7B /* MCMS2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMS2Tests.m; sourceTree = "<group>"; };
 		1254F7ED19E48BF000122F7B /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalCreature.h; sourceTree = "<group>"; };
 		1254F7EE19E48BF000122F7B /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalCreature.m; sourceTree = "<group>"; };
+		1254F7F019E4957300122F7B /* CreatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatureViewController.h; sourceTree = "<group>"; };
+		1254F7F119E4957300122F7B /* CreatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				1254F7CC19E48BC900122F7B /* AppDelegate.m */,
 				1254F7CE19E48BC900122F7B /* ViewController.h */,
 				1254F7CF19E48BC900122F7B /* ViewController.m */,
+				1254F7F019E4957300122F7B /* CreatureViewController.h */,
+				1254F7F119E4957300122F7B /* CreatureViewController.m */,
 				1254F7ED19E48BF000122F7B /* MagicalCreature.h */,
 				1254F7EE19E48BF000122F7B /* MagicalCreature.m */,
 				1254F7D119E48BC900122F7B /* Main.storyboard */,
@@ -227,6 +232,7 @@
 				1254F7D019E48BC900122F7B /* ViewController.m in Sources */,
 				1254F7EF19E48BF000122F7B /* MagicalCreature.m in Sources */,
 				1254F7CD19E48BC900122F7B /* AppDelegate.m in Sources */,
+				1254F7F219E4957300122F7B /* CreatureViewController.m in Sources */,
 				1254F7CA19E48BC900122F7B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
