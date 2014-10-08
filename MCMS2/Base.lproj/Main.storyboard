@@ -140,6 +140,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jPT-AU-h0m" id="bww-gt-7Px"/>
+                                    <outlet property="delegate" destination="jPT-AU-h0m" id="svc-by-8gC"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

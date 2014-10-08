@@ -7,8 +7,9 @@
 //
 
 #import "CreatureViewController.h"
+#import "MagicalCreature.h"
 
-@interface CreatureViewController () <UITextFieldDelegate>
+@interface CreatureViewController () <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabelButton;
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
@@ -26,7 +27,6 @@
     self.nameLabelButton.text = self.creatureSeg.name;
     self.detailLabelButton.text = self.creatureSeg.detail;
     self.imagePictureView.image = self.creatureSeg.picture;
-    self.attributesTableView
     //self.navigationItem.title = self.creatures.name;
     self.textField.hidden = YES;
 
@@ -57,5 +57,20 @@
 
     return YES;
 }
+
+#pragma mark - TableView Delegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.creatureSeg.attributes.count; //tripped me up - the array of attributes is a part of the original class we created for the NSArray, so we start with that
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"secondCellID" forIndexPath:indexPath];
+    MagicalCreature *cellCreature = [self.creatureSeg.attributes objectAtIndex:indexPath.row];
+    cell.textLabel.text = cellCreature.attributes;
+
+    return cell;}
 
 @end
