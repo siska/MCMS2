@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabelButton;
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabelButton;
 
 @end
 
@@ -21,6 +22,7 @@
     [super viewDidLoad];
 
     self.nameLabelButton.text = self.creatureSeg.name;
+    self.detailLabelButton.text = self.creatureSeg.detail;
     //self.navigationItem.title = self.creatures.name;
     self.textField.hidden = YES;
 

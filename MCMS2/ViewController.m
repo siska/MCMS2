@@ -25,10 +25,13 @@
 
     MagicalCreature *vampire = [[MagicalCreature alloc] init];
     vampire.name = @"Dr. Acula";
+    vampire.detail = @"Eastern European";
     MagicalCreature *werewolf = [[MagicalCreature alloc] init];
     werewolf.name = @"Marty";
+    werewolf.detail = @"Hairy";
     MagicalCreature *witch = [[MagicalCreature alloc] init];
     witch.name = @"Marge";
+    witch.detail = @"Old";
 
     self.creatures = [NSMutableArray arrayWithObjects:vampire, werewolf, witch, nil];
 
@@ -80,6 +83,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCellID" forIndexPath:indexPath];
     MagicalCreature *cellCreature = [self.creatures objectAtIndex:indexPath.row];
     cell.textLabel.text = cellCreature.name;
+    cell.detailTextLabel.text = cellCreature.detail;
 
     return cell;
 }

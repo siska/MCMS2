@@ -10,5 +10,6 @@
 
 @interface MagicalCreature : NSObject
 @property NSString *name;
+@property NSString *detail;
 
 @end
