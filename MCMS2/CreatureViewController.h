@@ -11,6 +11,6 @@
 
 @interface CreatureViewController : UIViewController
 
-@property MagicalCreature *creatures;
+@property MagicalCreature *creatureSeg;
 
 @end

@@ -34,6 +34,11 @@
 
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
+
 - (IBAction)onAddButtonTapped:(UIBarButtonItem *)sender {
     self.textField.enabled = YES;
 }
@@ -60,7 +65,7 @@
     MagicalCreature *creature = [self.creatures objectAtIndex:indexPath.row];
     CreatureViewController *creatureViewController = [segue destinationViewController];
 
-    creatureViewController.creatures = creature;
+    creatureViewController.creatureSeg = creature;
 }
 
 #pragma mark - TableView Delegates
