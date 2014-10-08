@@ -26,12 +26,15 @@
     MagicalCreature *vampire = [[MagicalCreature alloc] init];
     vampire.name = @"Dr. Acula";
     vampire.detail = @"Eastern European";
+    vampire.picture = [UIImage imageNamed:@"vampire"];
     MagicalCreature *werewolf = [[MagicalCreature alloc] init];
     werewolf.name = @"Marty";
     werewolf.detail = @"Hairy";
+    werewolf.picture = [UIImage imageNamed:@"werewolf"];
     MagicalCreature *witch = [[MagicalCreature alloc] init];
     witch.name = @"Marge";
     witch.detail = @"Old";
+    werewolf.picture = [UIImage imageNamed:@"witch"];
 
     self.creatures = [NSMutableArray arrayWithObjects:vampire, werewolf, witch, nil];
 

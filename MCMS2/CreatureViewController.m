@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabelButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imagePictureView;
 
 @end
 
@@ -23,6 +24,7 @@
 
     self.nameLabelButton.text = self.creatureSeg.name;
     self.detailLabelButton.text = self.creatureSeg.detail;
+    self.imagePictureView.image = self.creatureSeg.picture;
     //self.navigationItem.title = self.creatures.name;
     self.textField.hidden = YES;
 
