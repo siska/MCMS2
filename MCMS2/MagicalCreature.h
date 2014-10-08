@@ -13,5 +13,6 @@
 @property NSString *name;
 @property NSString *detail;
 @property UIImage *picture;
+@property NSMutableArray *attributes;
 
 @end

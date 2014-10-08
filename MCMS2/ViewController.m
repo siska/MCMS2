@@ -27,14 +27,18 @@
     vampire.name = @"Dr. Acula";
     vampire.detail = @"Eastern European";
     vampire.picture = [UIImage imageNamed:@"vampire"];
+    vampire.attributes = [NSMutableArray arrayWithObjects:@"Fangs", @"Wings", @"Cape", @"Coffin", nil];
     MagicalCreature *werewolf = [[MagicalCreature alloc] init];
     werewolf.name = @"Marty";
     werewolf.detail = @"Hairy";
     werewolf.picture = [UIImage imageNamed:@"werewolf"];
+    vampire.attributes = [NSMutableArray arrayWithObjects:@"Teeth", @"Claws", nil];
     MagicalCreature *witch = [[MagicalCreature alloc] init];
     witch.name = @"Marge";
     witch.detail = @"Old";
     werewolf.picture = [UIImage imageNamed:@"witch"];
+    vampire.attributes = [NSMutableArray arrayWithObjects:@"Broom", @"Nose", nil];
+
 
     self.creatures = [NSMutableArray arrayWithObjects:vampire, werewolf, witch, nil];
 
